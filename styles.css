@@ -1,9 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --bg: #000;
     --white: #e9e9e9;
     --dark-gray: #505050;
     --light-gray: #757575;
     --blue: #0039ff;
+}
+
+@font-face {
+    font-family: "geistSansFont";
+    src:
+        url("./assets/Geist-1.3.0/classic/Geist-Regular.woff2") format("woff2"),
+        url("./assets/Geist-1.3.0/classic/Geist-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "geistSansMonoFont";
+    src:
+        url("./assets/Geist-1.3.0/mono/GeistMono-Regular.woff2") format("woff2"),
+        url("./assets/Geist-1.3.0/mono/GeistMono-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -15,23 +35,50 @@
 body {
     color: var(--white);
     background-color: var(--bg);
+    font-family: "geistSansFont", sans-serif;
 }
 
-.nav {
-    padding: 1rem 0 0 1.5rem;
-    height: 4rem;
-    width: 100%;
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24px;
     border-bottom: 1px solid var(--dark-gray);
 }
 
-.nav ul li a {
+.nav {
+    height: 64px;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav .links {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.nav .links li {
+    list-style: none;
+}
+
+.nav .links li:nth-child(1) {
+    margin-left: 20px;
+}
+
+.nav .links li a {
     color: var(--light-gray);
 }
 
 .nav .logo {
     display: flex;
     align-items: center;
-    gap: 0.2rem;
 } 
 
 .nav .logo > * {
@@ -40,4 +87,60 @@ body {
 
 .nav .logo > [role=separator] {
     stroke: var(--dark-gray);
+}
+
+.nav .buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav .buttons a {
+    padding: 0 12px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    transition: background-color 150ms;
+}
+
+.nav .buttons .deploy {
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.14);
+    color: hsla(0,0%,93%,1);
+    background-color: #0a0a0a;
+}
+
+.nav .buttons .deploy:hover {
+    background-color: hsla(0,0%,12%,1);
+}
+
+.nav .buttons .deploy span {
+    padding: 0 6px;
+}
+
+.nav .buttons .learn {
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.14);
+    color: #0a0a0a;
+    background-color: hsla(0,0%,93%,1);
+}
+
+.nav .buttons .learn:hover {
+    background-color: #ccc;
+}
+
+.nav .buttons .search-doc {
+    /* width: 273px; */
+    padding: 0 6px 0 8px;
+    font-family: "Inter", -apple-system;
+    font-size: 14px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: hsla(0,0%,10%,1);
+    color: hsla(0,0%,56%,1);
+    outline: none;
+    border: none;
 }
