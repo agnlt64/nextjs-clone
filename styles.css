@@ -151,3 +151,69 @@ header {
     outline: none;
     border: none;
 }
+
+/* main {
+    padding: 56px;
+    margin: 190.5px;
+    max-width: 1346px;
+    width: 100%;
+} */
+
+.conf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "geistSansMonoFont";
+    text-transform: uppercase;
+}
+
+.conf img {
+    width: 1200px;
+}
+
+.conf .date {
+    display: flex;
+    flex-direction: column;
+}
+
+.conf .date span::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #0057FF;
+    translate: -100% 150%;
+    margin-left: -0.5rem;
+}
+
+.conf .date .conf-logo {
+    height: 28px;
+    width: 121px;
+}
+
+.conf .tickets {
+    display: flex;
+    flex-direction: column;
+}
+
+.conf .tickets button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "geistSansMonoFont";
+    text-transform: uppercase;
+    height: 3rem;
+    background-color: #0057FF;
+    border: none;
+    padding-inline: 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: opacity 150ms;
+    width: max-content;
+    font-size: 1rem;
+}
+
+.conf .tickets button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
