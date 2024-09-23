@@ -230,3 +230,34 @@ main {
 .conf img {
     margin-top: 1.5rem;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.cards .card {
+    border: 1px solid var(--dark-gray);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: 150ms border-color, 150ms background-color;
+}
+
+.cards .card:hover {
+    border-color: #444;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    cursor: pointer;
+}
+
+.cards .card .title {
+    font-weight: 600;
+}
+
+.cards .card .description {
+    font-size: 14px;
+    color: var(--light-gray);
+}
