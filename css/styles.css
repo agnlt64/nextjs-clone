@@ -56,6 +56,7 @@ header {
     display: flex;
     align-items: center;
     gap: 24px;
+    position: relative;
 }
 
 .nav .links {
@@ -141,7 +142,6 @@ header {
 }
 
 .nav .buttons .search-doc {
-    /* width: 273px; */
     padding: 0 6px 0 8px;
     font-family: "Inter", -apple-system;
     font-size: 14px;
@@ -260,4 +260,56 @@ main {
 .cards .card .description {
     font-size: 14px;
     color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+    .nav .buttons {
+        display: none;
+    }
+
+    .nav .links {
+        display: none;
+    }
+
+    .nav .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .nav .search-icon {
+        display: block;
+        position: absolute;
+        right: 60px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav .hamburger {
+        display: none;
+    }
+
+    .nav .search-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        padding: 5rem 10.5rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .nav .buttons .search-doc {
+        width: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 5rem 20.5rem;
+    }
 }
