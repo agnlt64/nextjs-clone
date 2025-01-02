@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next.js by Vercel - The React Framework</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <script src="./tailwind.js"></script>
 </head>
@@ -42,7 +43,7 @@
                 </li>
             </ul>
             <div class="buttons">
-                <input class="search-doc" type="text" placeholder="Search documentation">
+                <input class="search-doc" type="text" placeholder="Search documentation...">
                 <a class="deploy" href="#">
                     <svg aria-label="Vercel logomark" height="13" role="img" viewBox="0 0 74 64"><path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z" fill="var(--white)"></path></svg>
                     <span>Deploy</span>
@@ -59,6 +60,25 @@
         </nav>
     </header>
     <main>
+        <section class="conf">
+            <div class="top">
+                <div class="date-container">
+                    <div class="date">
+                        <span class="square"></span>
+                        <span title>24th october 2024</span>
+                    </div>
+                    <svg class="conf-logo" aria-label="Next.js Conf 2024" fill="none" viewBox="0 0 243 56" xmlns="http://www.w3.org/2000/svg"><path d="M3.84 10.92H11.184L25.776 36.36V10.92H32.064V45H24.432L10.08 20.28V45H3.84V10.92ZM34.1974 32.28C34.1974 24.216 39.1894 18.984 46.8214 18.984C53.3974 18.984 58.6774 23.496 58.7734 32.472V33.96H40.6774C40.9654 38.184 43.1734 40.728 46.8214 40.728C49.1254 40.728 51.2374 39.384 52.1494 37.176L58.4374 37.608C56.9014 42.504 52.2934 45.576 46.8214 45.576C39.1894 45.576 34.1974 40.344 34.1974 32.28ZM40.7254 29.88H52.4374C51.9574 25.512 49.5574 23.832 46.8214 23.832C43.4134 23.832 41.2054 26.088 40.7254 29.88ZM75.8197 19.56H82.6838L73.8037 32.04L83.0197 45H76.1077L70.2037 36.168L64.2517 45H57.3397L66.5557 32.04L57.6757 19.56H64.5877L70.2037 27.912L75.8197 19.56ZM87.0364 13.608H93.1804V19.56H99.9004V24.312H93.1804V37.176C93.1804 39.144 94.1884 40.248 96.0604 40.248H99.9004V45H95.0524C89.8204 45 87.0364 42.36 87.0364 37.176V24.312H83.0044V19.56H87.0364V13.608ZM101.917 38.28H108.973V45H101.917V38.28ZM119.413 44.184C119.413 49.368 116.917 52.2 111.589 52.2H107.893V47.448H110.485C112.213 47.448 113.269 46.2 113.269 44.184V19.56H119.413V44.184ZM113.125 16.2V10.968H119.509V16.2H113.125ZM138.12 27.72C137.64 25.128 135.384 23.64 132.936 23.64C130.488 23.64 128.664 24.888 128.712 26.904C128.76 28.92 131.16 29.736 133.896 30.216C140.808 31.416 144.648 33.288 144.648 38.184C144.648 43.08 139.656 45.576 133.704 45.576C126.984 45.576 122.136 42.264 121.704 36.936L127.992 36.6C128.472 39.288 130.488 40.872 133.656 40.872C135.768 40.872 138.312 40.152 138.264 38.04C138.264 35.592 135.24 35.304 132.648 34.728C126.552 33.48 122.328 31.752 122.328 27C122.328 22.056 126.648 18.984 133.272 18.984C139.08 18.984 143.544 22.248 144.36 27.432L138.12 27.72Z" fill="currentColor"></path><path clip-rule="evenodd" d="M236.981 10.8418C240.14 10.8418 242.699 13.402 242.699 16.5609V39.4399C242.699 42.5988 240.14 45.159 236.981 45.159H160.718C157.56 45.159 155 42.5988 155 39.4399V16.5609C155 13.402 157.56 10.8418 160.718 10.8418H236.981ZM236.981 12.7477H160.718C158.613 12.7477 156.906 14.4552 156.906 16.5609V39.4399C156.906 41.5456 158.613 43.2524 160.718 43.253H236.981C239.087 43.2524 240.794 41.5456 240.794 39.4399V16.5609C240.794 14.4552 239.087 12.7477 236.981 12.7477ZM214.086 35.6223C214.086 34.4347 214.257 33.3935 214.594 32.5068C214.932 31.6161 215.509 30.7863 216.323 30.0216C217.145 29.2529 218.275 28.4801 219.723 27.7074C220.472 27.321 221.041 26.9793 221.435 26.6865C221.83 26.3895 222.119 26.0804 222.306 25.751C222.493 25.4215 222.587 25.0189 222.587 24.543C222.587 23.8149 222.355 23.2293 221.895 22.7901C221.44 22.3548 220.785 22.1352 219.939 22.1352C218.979 22.1352 218.214 22.3955 217.649 22.9201C217.083 23.4448 216.725 24.1932 216.583 25.1694L214.151 25.0189C214.31 23.4571 214.891 22.2287 215.896 21.338C216.896 20.4513 218.247 20.0039 219.939 20.0039C220.972 20.0039 221.871 20.191 222.639 20.5651C223.404 20.9393 223.99 21.4641 224.392 22.1474C224.795 22.8266 224.994 23.6116 224.994 24.5024C224.994 25.2914 224.864 25.9666 224.608 26.5238C224.348 27.0851 223.929 27.6017 223.347 28.0857C222.769 28.5656 221.956 29.0862 220.907 29.6434C219.646 30.3186 218.678 30.9857 218.003 31.6446C217.328 32.3035 216.97 32.8973 216.929 33.4301H225.015V35.6223H214.086ZM225.604 32.4806H232.791V35.6206H235.158V32.4806H236.964V30.2884H235.158V20.3479H232.445L225.604 30.4145V32.4806ZM232.791 23.5977V30.2884H228.207L232.791 23.5977ZM166.431 35.9878C165.21 35.9878 164.163 35.6686 163.289 35.0304C162.414 34.3921 161.752 33.4729 161.297 32.2761C160.847 31.0794 160.621 29.6607 160.621 28.0269C160.621 26.3757 160.847 24.9536 161.297 23.7568C161.752 22.5566 162.414 21.6374 163.289 20.9922C164.163 20.347 165.21 20.0244 166.431 20.0244C167.878 20.0244 169.074 20.4927 170.021 21.4327C170.968 22.3728 171.586 23.6874 171.874 25.3802L169.401 25.5085C169.199 24.4193 168.842 23.5972 168.336 23.0457C167.826 22.4942 167.191 22.2167 166.431 22.2167C165.37 22.2167 164.551 22.7196 163.979 23.7221C163.403 24.7281 163.115 26.1607 163.115 28.0269C163.115 29.8896 163.403 31.3187 163.979 32.3073C164.551 33.2994 165.37 33.792 166.431 33.792C167.233 33.792 167.895 33.4937 168.419 32.9005C168.943 32.3039 169.3 31.4193 169.484 30.2434L171.961 30.3718C171.686 32.1339 171.072 33.511 170.119 34.5031C169.165 35.4917 167.937 35.9878 166.431 35.9878ZM175.006 33.8892C176.005 35.2872 177.413 35.9879 179.234 35.9879C181.055 35.9879 182.467 35.2872 183.463 33.8892C184.458 32.4913 184.958 30.5384 184.958 28.027C184.958 25.4878 184.458 23.5176 183.463 22.1197C182.467 20.7217 181.055 20.0245 179.234 20.0245C177.413 20.0245 176.005 20.7217 175.006 22.1197C174.01 23.5176 173.511 25.4878 173.511 28.027C173.511 30.5384 174.01 32.4913 175.006 33.8892ZM181.635 32.3075C181.08 33.2822 180.282 33.7713 179.234 33.7713C178.187 33.7713 177.389 33.2822 176.837 32.3075C176.282 31.3327 176.008 29.9071 176.008 28.027C176.008 26.1469 176.282 24.7143 176.837 23.7222C177.389 22.7336 178.187 22.2376 179.234 22.2376C180.282 22.2376 181.08 22.7336 181.635 23.7222C182.186 24.7143 182.46 26.1469 182.46 28.027C182.46 29.9071 182.186 31.3327 181.635 32.3075ZM187.083 20.3685H189.924L194.787 31.597V20.3685H197.153V35.645H194.312L189.449 24.4131V35.645H187.083V20.3685ZM210.258 20.3685H200.622V35.645H202.988V29.2521H209.873V27.0806H202.988V22.54H210.258V20.3685Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                </div>
+                <div class="tickets">
+                    <span title>In person & virtual</span>
+                    <button>
+                        <span>Get tickets</span>
+                        <svg height="16" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 7.25H4.5V8.75H5.25H9.43934L7.96967 10.2197L7.43934 10.75L8.5 11.8107L9.03033 11.2803L11.7803 8.53033C12.0732 8.23744 12.0732 7.76256 11.7803 7.46967L9.03033 4.71967L8.5 4.18934L7.43934 5.25L7.96967 5.78033L9.43934 7.25H5.25ZM8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8C14.5 11.5899 11.5899 14.5 8 14.5ZM0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8Z" fill="currentColor"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <img src="./assets/logo.png" alt="NextJS logo">
+        </section>
         <section class="presentation">
             <h1>The React Framework for the Web</h1>
             <p>
@@ -69,49 +89,59 @@
                     <button>Get started</button>
                     <button>Learn Next.js</button>
                 </div>
-                <code>
+                <code class="command">
                     <i class='bx bxs-up-arrow'></i>
                     ~ npx create-next-app@latest
                 </code>
             </div>
         </section>
-        <div class="cards">
-            <section class="cards-left">
+        <section class="what">
+            <h2>What's in Next.js?</h2>
+            <span>Everything you need to build great products on the web.</span>
+        </section>
+        <section class="features">
+            <div class="col">
                 <div class="card">
+                    <img src="./assets/screens.png" alt="desktop screens with different resolutions">
                     <span class="title">Built-in Optimizations</span>
                     <p class="description">Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.</p>
-                </div>
-                <div class="card">
-                    <span class="title">Dynamic HTML Streaming</span>
-                    <p class="description">Instantly stream UI from the server, integrated with the App Router and React Suspense.</p>
                 </div>
                 <div class="card">
                     <span class="title">Data Fetching</span>
                     <p class="description">Make your React component async and await your data. Next.js supports both server and client data fetching.</p>
                 </div>
                 <div class="card">
-                    <span class="title">CSS Support</span>
-                    <p class="description">Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.</p>
-                </div>
-                <div class="card">
                     <span class="title">Server Actions</span>
                     <p class="description">Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.</p>
-                </div>
-                <div class="card">
-                    <span class="title">Route Handlers</span>
-                    <p class="description">Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.</p>
                 </div>
                 <div class="card">
                     <span class="title">Advanced Routing & Nested Layouts</span>
                     <p class="description">Create routes using the file system, including support for more advanced routing patterns and UI layouts.</p>
                 </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/page.png" alt="a web page">
+                    <span class="title">Dynamic HTML Streaming</span>
+                    <p class="description">Instantly stream UI from the server, integrated with the App Router and React Suspense.</p>
+                </div>
+                <div class="card">
+                    <span class="title">CSS Support</span>
+                    <p class="description">Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.</p>
+                </div>
+                <div class="card">
+                    <span class="title">Route Handlers</span>
+                    <p class="description">Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.</p>
+                </div>
+                
                 <div class="card">
                     <span class="title">Middleware</span>
                     <p class="description">Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.</p>
                 </div>
-            </section>
-            <section class="cards-right">
+            </div>
+            <div class="col">
                 <div class="card">
+                    <img src="./assets/atoms.png" alt="react component illustration">
                     <span class="title">React Server Components</span>
                     <p class="description">Add components without sending additional client-side JavaScript. Built on the latest React features.</p>
                 </div>
@@ -126,12 +156,36 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);" data-darkreader-inline-fill=""><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
                     </button>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="powered-by">
             <h2>Built on a foundation of fast, production-grade tooling</h2>
             <div class="cpu">
+                <div class="top-pins">
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                </div>
+    
+                <div class="left-pins">
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                </div>
                 <span class="label">Powered By</span>
+                <div class="right-pins">
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                </div>
+    
+                <div class="bot-pins">
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                    <span class="pin"></span>
+                </div>
             </div>
         </section>
     </main>
