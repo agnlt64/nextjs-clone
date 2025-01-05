@@ -6,7 +6,7 @@
     <title>Next.js by Vercel - The React Framework</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/svgs/favicon.svg" type="image/x-icon">
     <script src="./tailwind.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <nav class="nav">
             <a href="index.html">
                 <div class="logo">
-                    <svg aria-label="Vercel logomark" height="22" role="img"viewBox="0 0 74 64"><path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"></path></svg>
+                    <svg aria-label="Vercel logomark" height="22" role="img" viewBox="0 0 74 64"><path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"></path></svg>
                     <svg height="32" role="separator" viewBox="0 0 32 32" width="32"><path d="M22 5L9 28" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="94" height="18" viewBox="0 0 394 79" fill="none">
                         <path d="M261.919 0.0330722H330.547V12.7H303.323V79.339H289.71V12.7H261.919V0.0330722Z"/>
@@ -62,7 +62,7 @@
         </nav>
     </header>
     <main>
-        <section class="conf">
+        <div class="conf">
             <div class="top">
                 <div class="date-container">
                     <div class="date">
@@ -79,8 +79,8 @@
                     </button>
                 </div>
             </div>
-            <img src="./assets/logo.png" alt="NextJS logo">
-        </section>
+            <img src="./assets/imgs/logo.png" alt="NextJS logo">
+        </div>
         <section class="presentation">
             <h1>The React Framework for the Web</h1>
             <p>
@@ -101,10 +101,10 @@
             <h2>What's in Next.js?</h2>
             <span>Everything you need to build great products on the web.</span>
         </section>
-        <section class="features">
+        <div class="features">
             <div class="col">
                 <div class="card">
-                    <img src="./assets/screens.png" alt="desktop screens with different resolutions">
+                    <img src="./assets/imgs/screens.png" alt="desktop screens with different resolutions">
                     <span class="title">Built-in Optimizations</span>
                     <p class="description">Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.</p>
                 </div>
@@ -123,7 +123,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./assets/page.png" alt="a web page">
+                    <img src="./assets/imgs/page.png" alt="a web page">
                     <span class="title">Dynamic HTML Streaming</span>
                     <p class="description">Instantly stream UI from the server, integrated with the App Router and React Suspense.</p>
                 </div>
@@ -143,7 +143,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./assets/atoms.png" alt="react component illustration">
+                    <img src="./assets/imgs/atoms.png" alt="react component illustration">
                     <span class="title">React Server Components</span>
                     <p class="description">Add components without sending additional client-side JavaScript. Built on the latest React features.</p>
                 </div>
@@ -159,7 +159,7 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="powered-by-container">
             <section class="powered-by">
                 <h2>Built on a foundation of fast, production-grade tooling</h2>
@@ -192,19 +192,19 @@
                 </div>
                 <div class="stack">
                     <a href="https://react.dev" class="tech">
-                        <img src="./assets/react.svg" alt="react js logo" width="45" height="40">
+                        <img src="./assets/svgs/react.svg" alt="react js logo" width="45" height="40">
                         <span class="name">React<i class='bx bx-link-external'></i></span>
-                        <span class="description">The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.</>
+                        <span class="description">The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.</span>
                     </a>
                     <a href="https://turbo.build" class="tech">
-                        <img src="./assets/turbopack.svg" alt="turbopack logo" width="40" height="40">
+                        <img src="./assets/svgs/turbopack.svg" alt="turbopack logo" width="40" height="40">
                         <span class="name">Turbopack<i class='bx bx-link-external'></i></span>
-                        <span class="description">An incremental bundler optimized for JavaScript and TypeScript, written in Rust <img src="./assets/rust.svg" width="20" height="20" alt="worst programming language logo">, and built into Next.js.</>
+                        <span class="description">An incremental bundler optimized for JavaScript and TypeScript, written in Rust <img src="./assets/svgs/rust.svg" width="20" height="20" alt="worst programming language logo">, and built into Next.js.</span>
                     </a>
                     <a href="https://swc.rs" class="tech">
-                        <img src="./assets/swc.svg" alt="speedy web compiler logo" width="92" height="32">
+                        <img src="./assets/svgs/swc.svg" alt="speedy web compiler logo" width="92" height="32">
                         <span class="name">Speedy Web Compiler<i class='bx bx-link-external'></i></span>
-                        <span class="description">An extensible Rust <img src="./assets/rust.svg" width="20" height="20" alt="worst programming language logo"> based platform for the next generation of fast developer tools, and can be used for both compilation and minification.</>
+                        <span class="description">An extensible Rust <img src="./assets/svgs/rust.svg" width="20" height="20" alt="worst programming language logo"> based platform for the next generation of fast developer tools, and can be used for both compilation and minification.</span>
                     </a>
                 </div>
             </section>
