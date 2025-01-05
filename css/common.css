@@ -43,20 +43,9 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
+h1 {
+    font-family: "geistSansFontMono", sans-serif;
 }
-
-li a {
-    color: var(--light-gray);
-    transition: color 150ms;
-}
-
-li a:hover {
-    font-weight: 550;
-    color: var(--white);
-}
-
 
 header {
     display: flex;
@@ -88,7 +77,20 @@ header {
 
 .nav .links .current {
     color: var(--active-link);
-    text-shadow: var(--active-link);
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link a {
+    color: var(--light-gray);
+    transition: color 150ms;
+}
+
+.nav-link a:hover {
+    font-weight: 550;
+    color: var(--white);
 }
 
 .nav .links li:nth-child(1) {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction | Next.js</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/docs.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/svgs/favicon.svg" type="image/x-icon">
 </head>
@@ -28,16 +29,16 @@
                 </div>
             </a>
             <ul class="links">
-                <li>
+                <li class="nav-link">
                     <a href="./about.html">About</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a class="current" href="./docs.html">Docs</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./blog.html">Blog</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
@@ -60,8 +61,19 @@
             </div>
         </nav>
     </header>
-    <main>
-        
+    <main class="main">
+        <aside class="side-nav">
+            <div class="top">
+                <button class="option">
+                    <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.154663L8.34601 0.334591L14.596 3.58459L15 3.79466V4.25V11.75V12.2053L14.596 12.4154L8.34601 15.6654L8 15.8453L7.65399 15.6654L1.40399 12.4154L1 12.2053V11.75V4.25V3.79466L1.40399 3.58459L7.65399 0.334591L8 0.154663ZM2.5 11.2947V5.44058L7.25 7.81559V13.7647L2.5 11.2947ZM8.75 13.7647L13.5 11.2947V5.44056L8.75 7.81556V13.7647ZM8 1.84534L12.5766 4.22519L7.99998 6.51352L3.42335 4.2252L8 1.84534Z" fill="currentColor"></path></svg>
+                    <span>Using App Router</span>
+                    <span class="subtitle">Features available in /app</span>
+                    <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.7071 2.39644C8.31658 2.00592 7.68341 2.00592 7.29289 2.39644L4.46966 5.21966L3.93933 5.74999L4.99999 6.81065L5.53032 6.28032L7.99999 3.81065L10.4697 6.28032L11 6.81065L12.0607 5.74999L11.5303 5.21966L8.7071 2.39644ZM5.53032 9.71966L4.99999 9.18933L3.93933 10.25L4.46966 10.7803L7.29289 13.6035C7.68341 13.9941 8.31658 13.9941 8.7071 13.6035L11.5303 10.7803L12.0607 10.25L11 9.18933L10.4697 9.71966L7.99999 12.1893L5.53032 9.71966Z" fill="currentColor"></path></svg>
+                </button>
+            </div>
+        </aside>
+        <section class="content"></section>
+        <div class="summary"></div>
     </main>
     <footer class="footer">
         <div class="col">
@@ -75,19 +87,19 @@
         <div class="col">
             <span>Navigation</span>
             <ul class="links">
-                <li>
-                    <a href="../index.html">Home page</a>
+                <li class="nav-link">
+                    <a href="../index.html">Home</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./about.html">About</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./docs.html">Docs</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./blog.html">Blog</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>

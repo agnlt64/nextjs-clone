@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next.js by Vercel - The React Framework</title>
     <link rel="stylesheet" href="../css/common.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/svgs/favicon.svg" type="image/x-icon">
 </head>
@@ -28,16 +29,16 @@
                 </div>
             </a>
             <ul class="links">
-                <li>
+                <li class="nav-link">
                     <a href="./about.html">About</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./docs.html">Docs</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a class="current" href="./blog.html">Blog</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
@@ -60,8 +61,150 @@
             </div>
         </nav>
     </header>
-    <main>
-        
+    <main class="  gap-x-6 py-10 md:flex md:flex-row md:py-10 border-solid border-0 border-b border-zinc-800">
+        <div class="my-10 mx-auto max-w-screen-xl w-full">
+            <h1 class="text-3xl font-semibold ">The latest Next.js news</h1>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-12">
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl">
+                    <h2 class="hidden">Composable Caching with Next.js</h2>
+                    <div class="p-3 flex flex-col gap-1 h-full">
+                        <span class="text-zinc-500">January 3rd, 2025</span>
+                        <a href="#" class="text-blue-600 text-xl font-semibold">Composable Caching with Next.js</a>
+                        <div class="my-3 max-w-96 text-base">We're working on a simple and powerful caching model for Next.js. In a previous post, we talked about our journey with caching and how we've arrived at the <code class="bg-zinc-800 px-1 py-0.5 rounded">'use cache'</code> directive.</div>
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl min-h-72">
+                    <h2 class="hidden">Next.js 15.1</h2>
+                    <div class="p-3 flex flex-col gap-1">
+                        <span class="text-zinc-500">December 10th, 2024</span>
+                        <a href="#" class="text-blue-500 text-xl font-semibold">Next.js 15.1</a>
+                        <div class="my-3 max-w-96 text-base">
+                            Next.js 15.1 introduces core upgrades, new APIs, and improvements to the developer experience including:
+                            <ul class="list-disc list-inside text-blue-400">
+                                <li>
+                                    <a href="#">React 19 (stable)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Improved Error Debugging</a>
+                                </li>
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">after</code> (stable)</a>
+                                </li>
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">forbidden</code>/<code class="bg-zinc-800 px-1 py-0.5 rounded">unauthorized</code> (expermiental)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl min-h-72">
+                    <h2 class="hidden">Our Journey with Caching</h2>
+                    <div class="p-3 flex flex-col gap-1">
+                        <span class="text-zinc-500">October 24th, 2024</span>
+                        <a href="#" class="text-blue-500 text-xl font-semibold">Our Journey with Caching</a>
+                        <div class="my-3 max-w-96 text-base">Frontend performance can be hard to get right. Even in highly optimized apps, the most common culprit by far is client-server waterfalls. When introducing Next.js App Router, we knew we wanted to solve this issue. To do that, we needed to move client-server REST fetches to the server using React Server Components in a single roundtrip. This meant the server had to sometimes be dynamic, sacrificing the great initial loading performance of Jamstack. We built partial prerendering to solve this tradeoff and have the best of both worlds.</div>
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl min-h-72">
+                    <h2 class="hidden">Next.js 15</h2>
+                    <div class="p-3 flex flex-col gap-1">
+                        <span class="text-zinc-500">October 21st, 2024</span>
+                        <a href="#" class="text-blue-500 text-xl font-semibold">Next.js 15</a>
+                        <div class="my-3 max-w-96 text-base">
+                            Our mission to create the best developer experience continues with Next.js 15, featuring:
+                            <ul class="list-disc list-inside text-blue-400">
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">@next/codemod</code> CLI</a>
+                                </li>
+                                <li>
+                                    <a href="#">Async Request APIs (Breaking)</a>
+                                </li>
+                                <li>
+                                    <a href="">Caching Semantics (Breaking)</a>
+                                </li>
+                                <li>
+                                    <a href="#">React 19</a>
+                                </li>
+                                <li>
+                                    <a href="#">Turbopack Dev</a>
+                                </li>
+                                <li>
+                                    <a href="#">Static Indicator</a>
+                                </li>
+                                <li>
+                                    <a href="#">unstable_after (Experimental)</a>
+                                </li>
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">instrumentation.js</code> (Stable)</a>
+                                </li>
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">next/form</code></a>
+                                </li>
+                                <li>
+                                    <a href="#">TypeScript Support for <code class="bg-zinc-800 px-1 py-0.5 rounded">next.config</code></a>
+                                </li>
+                                <li>
+                                    <a href="#">Self-hosting</a>
+                                </li>
+                                <li>
+                                    <a href="#">Server Actions Security</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bundling external packages (Stable)</a>
+                                </li>
+                                <li>
+                                    <a href="#">ESLint 9 support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Development and Build Performance</a>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl min-h-72">
+                    <h2 class="hidden">Turbopack Dev is Now Stable</h2>
+                    <div class="p-3 flex flex-col gap-1">
+                        <span class="text-zinc-500">October 21st, 2024</span>
+                        <a href="#" class="text-blue-500 text-xl font-semibold">Turbopack Dev is Now Stable</a>
+                        <div class="my-3 max-w-96 text-base">It's been a long road, but we are happy to announce that <code class="bg-zinc-800 px-1 py-0.5 rounded">next dev --turbo</code> is now stable and ready to speed up your development experience.</div>
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+                <article class="flex flex-col p-1.5 border border-zinc-600 rounded-xl min-h-72">
+                    <h2 class="hidden">Next.js 15 RC 2</h2>
+                    <div class="p-3 flex flex-col gap-1">
+                        <span class="text-zinc-500">October 15th, 2024</span>
+                        <a href="#" class="text-blue-500 text-xl font-semibold">Next.js 15 RC 2</a>
+                        <div class="my-3 max-w-96 text-base">
+                            The Next.js 15 Release Candidate (RC) is now available. This early version allows you to test the latest features before the upcoming stable release.
+                            <ul class="list-disc list-inside text-blue-400">
+                                <li>
+                                    <a href="#">Turbopack (dev)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Async Request APIs (breaking)</a>
+                                </li>
+                                <li>
+                                    <a href="#"><code class="bg-zinc-800 px-1 py-0.5 rounded">next/form</code></a>
+                                </li>
+                                <li>
+                                    <a href="#">Self-hosting</a>
+                                </li>
+                                <li>
+                                    <a href="#">ESLint 9 support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="mt-auto flex h-9 font-medium items-center justify-center rounded-md bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 duration-200 transition-colors" href="#">Read More</a>
+                </article>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="col">
@@ -75,19 +218,19 @@
         <div class="col">
             <span>Navigation</span>
             <ul class="links">
-                <li>
-                    <a href="../index.html">Home page</a>
+                <li class="nav-link">
+                    <a href="../index.html">Home</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./about.html">About</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./docs.html">Docs</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./blog.html">Blog</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
