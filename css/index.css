@@ -169,6 +169,17 @@
     cursor: copy;
 }
 
+.presentation .get-started .command .bx-copy,
+.presentation .get-started .command .bx-check {
+    opacity: 0;
+    transition: 0.1s opacity;
+}
+
+.presentation .get-started .command:hover .bx-copy,
+.presentation .get-started .command:hover .bx-check {
+    opacity: 1;
+}
+
 @media (max-width: 992px) {
     .presentation {
         margin-bottom: 6rem;

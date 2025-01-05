@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next.js by Vercel - The React Framework</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/common.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/svgs/favicon.svg" type="image/x-icon">
-    <script src="./tailwind.js"></script>
 </head>
 <body>
     <header>
@@ -92,9 +91,10 @@
                     <button>Get started</button>
                     <button>Learn Next.js</button>
                 </div>
-                <code class="command">
+                <code class="command" id="copy">
                     <i class='bx bxs-up-arrow'></i>
-                    ~ npx create-next-app@latest
+                    ~ <span id="command">npx create-next-app@latest</span>
+                    <i class='bx bx-copy'></i>
                 </code>
             </div>
         </section>
@@ -242,4 +242,5 @@
         </div>
     </footer>
 </body>
+<script src="./js/copy.js"></script>
 </html>
