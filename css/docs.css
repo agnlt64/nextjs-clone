@@ -1,5 +1,120 @@
 
 .main {
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.doc-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 0.75fr 2fr 0.5fr;
+    gap: 2rem;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: calc(80vh);
+}
+
+.side-nav .top .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 0.75rem 0.5rem;
+    border: none;
+    transition: background-color 0.15s;
+    width: 100%;
+    border-radius: 0.375rem;
+}
+
+.side-nav .top .option:hover {
+    background-color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.side-nav .top .option .svg-container:not(.dropdown) {
+    background-color: #0f1c2e;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.375rem;
+    border: 1px solid hsla(212,100%,48%,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-nav .top .option .svg-container svg {
+    scale: 1.1;
+}
+
+.side-nav .top .option .label {
+    font-family: "geistSansFont", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.side-nav .top .option .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.side-nav .top .option .text .subtitle {
+    font-family: "geistSansFont", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: var(--light-gray);
+}
+
+.side-nav .doc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.side-nav .doc-content::-webkit-scrollbar {
+    background-color: #000;
+    width: 4px;
+}
+
+.side-nav .doc-content::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 0.25rem;
+}
+
+.side-nav .doc-content section h3 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.side-nav .doc-content section .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-left: 0.25rem;
+    list-style: none;
+}
+
+.side-nav .doc-content section .links ul li a {
+    color: var(--light-gray);
+    transition: 0.15s color;
+}
+
+.side-nav .doc-content section .links ul li a:hover {
+    color: var(--white);
+}
+
+.content {
+    max-height: 90vh;
+    overflow-y: auto;
 }

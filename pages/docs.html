@@ -6,6 +6,7 @@
     <title>Introduction | Next.js</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/docs.css">
+    <!-- <script src="../js/tailwind.js"></script> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/svgs/favicon.svg" type="image/x-icon">
 </head>
@@ -92,18 +93,172 @@
         </div>
     </div>
     <main class="main">
-        <aside class="side-nav">
-            <div class="top">
-                <button class="option">
-                    <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.154663L8.34601 0.334591L14.596 3.58459L15 3.79466V4.25V11.75V12.2053L14.596 12.4154L8.34601 15.6654L8 15.8453L7.65399 15.6654L1.40399 12.4154L1 12.2053V11.75V4.25V3.79466L1.40399 3.58459L7.65399 0.334591L8 0.154663ZM2.5 11.2947V5.44058L7.25 7.81559V13.7647L2.5 11.2947ZM8.75 13.7647L13.5 11.2947V5.44056L8.75 7.81556V13.7647ZM8 1.84534L12.5766 4.22519L7.99998 6.51352L3.42335 4.2252L8 1.84534Z" fill="currentColor"></path></svg>
-                    <span>Using App Router</span>
-                    <span class="subtitle">Features available in /app</span>
-                    <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.7071 2.39644C8.31658 2.00592 7.68341 2.00592 7.29289 2.39644L4.46966 5.21966L3.93933 5.74999L4.99999 6.81065L5.53032 6.28032L7.99999 3.81065L10.4697 6.28032L11 6.81065L12.0607 5.74999L11.5303 5.21966L8.7071 2.39644ZM5.53032 9.71966L4.99999 9.18933L3.93933 10.25L4.46966 10.7803L7.29289 13.6035C7.68341 13.9941 8.31658 13.9941 8.7071 13.6035L11.5303 10.7803L12.0607 10.25L11 9.18933L10.4697 9.71966L7.99999 12.1893L5.53032 9.71966Z" fill="currentColor"></path></svg>
-                </button>
-            </div>
-        </aside>
-        <section class="content"></section>
-        <div class="summary"></div>
+        <div class="doc-container">
+            <aside class="side-nav">
+                <div class="top">
+                    <button class="option">
+                        <div class="svg-container">
+                            <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: hsla(212,100%,48%,1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.154663L8.34601 0.334591L14.596 3.58459L15 3.79466V4.25V11.75V12.2053L14.596 12.4154L8.34601 15.6654L8 15.8453L7.65399 15.6654L1.40399 12.4154L1 12.2053V11.75V4.25V3.79466L1.40399 3.58459L7.65399 0.334591L8 0.154663ZM2.5 11.2947V5.44058L7.25 7.81559V13.7647L2.5 11.2947ZM8.75 13.7647L13.5 11.2947V5.44056L8.75 7.81556V13.7647ZM8 1.84534L12.5766 4.22519L7.99998 6.51352L3.42335 4.2252L8 1.84534Z" fill="hsla(212,100%,48%,1)"></path></svg>
+                        </div>
+                        <div class="text">
+                            <span class="label">Using App Router</span>
+                            <span class="subtitle">Features available in /app</span>
+                        </div>
+                        <div class="svg-container dropdown">
+                            <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="color: hsla(212,100%,48%,1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.7071 2.39644C8.31658 2.00592 7.68341 2.00592 7.29289 2.39644L4.46966 5.21966L3.93933 5.74999L4.99999 6.81065L5.53032 6.28032L7.99999 3.81065L10.4697 6.28032L11 6.81065L12.0607 5.74999L11.5303 5.21966L8.7071 2.39644ZM5.53032 9.71966L4.99999 9.18933L3.93933 10.25L4.46966 10.7803L7.29289 13.6035C7.68341 13.9941 8.31658 13.9941 8.7071 13.6035L11.5303 10.7803L12.0607 10.25L11 9.18933L10.4697 9.71966L7.99999 12.1893L5.53032 9.71966Z" fill="white"></path></svg>
+                        </div>
+                    </button>
+                    <button class="option">
+                        <div class="svg-container">
+                            <svg class="translate-x-px translate-y-px" data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: hsla(212,100%,48%,1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1.5H6.34315C7.00619 1.5 7.64207 1.76339 8.11091 2.23223L13.8787 8L8 13.8787L2.23223 8.11091C1.76339 7.64207 1.5 7.00619 1.5 6.34315V1.5ZM16 8L14.9393 6.93934L9.17157 1.17157C8.42143 0.421427 7.40401 0 6.34315 0H1.5H0V1.5V6.34315C0 7.40401 0.421426 8.42143 1.17157 9.17157L6.93934 14.9393L8 16L9.06066 14.9393L14.9393 9.06066L16 8ZM4.5 5.25C4.91421 5.25 5.25 4.91421 5.25 4.5C5.25 4.08579 4.91421 3.75 4.5 3.75C4.08579 3.75 3.75 4.08579 3.75 4.5C3.75 4.91421 4.08579 5.25 4.5 5.25Z" fill="hsla(212,100%,48%,1)"></path></svg>
+                        </div>
+                        <div class="text">
+                            <span class="label">Using Latest Version</span>
+                            <span class="subtitle">15.1.3</span>
+                        </div>
+                        <div class="svg-container dropdown">
+                            <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="color: hsla(212,100%,48%,1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.7071 2.39644C8.31658 2.00592 7.68341 2.00592 7.29289 2.39644L4.46966 5.21966L3.93933 5.74999L4.99999 6.81065L5.53032 6.28032L7.99999 3.81065L10.4697 6.28032L11 6.81065L12.0607 5.74999L11.5303 5.21966L8.7071 2.39644ZM5.53032 9.71966L4.99999 9.18933L3.93933 10.25L4.46966 10.7803L7.29289 13.6035C7.68341 13.9941 8.31658 13.9941 8.7071 13.6035L11.5303 10.7803L12.0607 10.25L11 9.18933L10.4697 9.71966L7.99999 12.1893L5.53032 9.71966Z" fill="white"></path></svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="doc-content">
+                    <section class="getting-started">
+                        <h3>Getting Started</h3>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Installation</a>
+                                </li>
+                                <li>
+                                    <a href="#">Project Structure</a>
+                                </li>
+                                <li>
+                                    <a href="#">Layouts and Pages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Images and Fonts</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSS and Styling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fetching data and streaming</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mutating Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Error handling</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="build-your-app">
+                        <h3>Building Your Application</h3>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Routing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Data Fetching</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rendering</a>
+                                </li>
+                                <li>
+                                    <a href="#">Caching</a>
+                                </li>
+                                <li>
+                                    <a href="#">Styling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Optimizing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Configuring</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Authentication</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deploying</a>
+                                </li>
+                                <li>
+                                    <a href="#">Upgrading</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="api-ref">
+                        <h3>API Reference</h3>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Directives</a>
+                                </li>
+                                <li>
+                                    <a href="#">Components</a>
+                                </li>
+                                <li>
+                                    <a href="#">File Conventions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Functions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Configuration</a>
+                                </li>
+                                <li>
+                                    <a href="#">CLI</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edge Runtime</a>
+                                </li>
+                                <li>
+                                    <a href="#">Turbopack</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="architecture">
+                        <h3>Architecture</h3>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fast Refresh</a>
+                                </li>
+                                <li>
+                                    <a href="#">Next.js Compiler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Browsers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="community">
+                        <h3>Community</h3>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Contribution Guide</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+            <section class="content">
+            </section>
+            <div class="summary">summary</div>
+        </div>
     </main>
     <footer class="footer">
         <div class="col">
