@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.mobile-buttons .hamburger-btn');
 
 hamburger.addEventListener('click', () => {
     navMobile.toggleAttribute('active');
+    document.body.classList.toggle('no-scroll');
 
     const currentState = hamburger.getAttribute("data-state");
 

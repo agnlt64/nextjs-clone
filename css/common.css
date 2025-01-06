@@ -39,6 +39,10 @@ body {
     font-family: "geistSansFont", sans-serif;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }

@@ -55,13 +55,43 @@
             </div>
             <div class="mobile-buttons">
                 <svg class="search-icon" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style="color:currentColor"><path d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z"></path><path d="M16 16l4.5 4.5"></path></svg>
-                <svg viewBox="0 0 150 80" width="40" height="40" fill="white" class="hamburger">
-                    <rect width="150" height="10"></rect>
-                    <rect y="60" width="150" height="15"></rect>
-                </svg>
+                <button class="hamburger-btn" aria-controls="primary-navigation" aria-expanded="false">
+                    <svg stroke="#fff" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="40" height="40">
+                      <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                      </path>
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
+    <div class="nav-mobile">
+        <ul class="links">
+            <li class="nav-link">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-link">
+                <a href="./pages/about.html">About</a>
+            </li>
+            <li class="nav-link">
+                <a href="./pages/docs.html">Docs</a>
+            </li>
+            <li class="nav-link">
+                <a href="./pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-link">
+                <a href="./pages/contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="buttons">
+            <a class="deploy" href="#">
+                <svg aria-label="Vercel logomark" height="13" role="img" viewBox="0 0 74 64"><path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z" fill="var(--white)"></path></svg>
+                <span>Deploy</span>
+            </a>
+            <a class="learn" href="#">
+                <span>Learn</span>
+            </a>
+        </div>
+    </div>
     <main class="main">
         
     </main>
@@ -96,4 +126,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/navbar.js"></script>
 </html>
