@@ -180,6 +180,12 @@
     opacity: 1;
 }
 
+@media (max-width: 1400px) {
+    .presentation {
+        margin-bottom: 8rem;
+    }
+}
+
 @media (max-width: 992px) {
     .presentation {
         margin-bottom: 6rem;
@@ -306,9 +312,9 @@
     border-radius: 12px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
     .features {
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 }
 
