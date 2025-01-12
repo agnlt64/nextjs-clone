@@ -5,9 +5,9 @@
 
 .doc-container {
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 4rem auto 2.5rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     overflow: visible;
 }
 
@@ -106,20 +106,41 @@
     font-size: 14px;
 }
 
+.side-nav .doc-content section h3 a {
+    color: var(--white);
+}
+
 .side-nav .doc-content section .links ul {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-left: 0.25rem;
+    margin-left: 0.1rem;
     list-style: none;
 }
 
 .side-nav .doc-content section .links ul li a {
-    color: var(--light-gray);
-    transition: 0.15s color;
+    display: block;
+    width: 100%;
 }
 
-.side-nav .doc-content section .links ul li a:hover {
+.side-nav .doc-content section .links ul li a:has(i) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.side-nav .doc-content section .links ul li a:has(i) i {
+    color: var(--light-gray);
+    font-size: 1.5rem;
+}
+
+.side-nav .doc-content section .links ul li a {
+    color: var(--light-gray);
+    transition: 0.2s color ease;
+}
+
+.side-nav .doc-content section .links ul li a:hover,
+.side-nav .doc-content section .links ul li a:hover:has(i) i {
     color: var(--white);
 }
 
@@ -132,6 +153,10 @@
 .docs-content a {
     color: var(--white);
     transition: 0.15s color;
+}
+
+.docs-content .active {
+    color: var(--active-link);
 }
 
 .docs-content a:hover {
@@ -152,8 +177,8 @@
     margin-bottom: 2rem;
 }
 
-.docs-content section:not(.greetings) {
-    border-top: 1px solid var(--dark-gray);
+.docs-content section {
+    border-bottom: 1px solid var(--dark-gray);
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
@@ -164,6 +189,71 @@
 .docs-content section p {
     font-size: 1rem;
     line-height: 1.75rem;
+}
+
+.docs-content table {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.docs-content table thead tr th {
+    padding-bottom: 1rem;
+}
+
+.docs-content table tbody tr {
+    border-top: 1px solid var(--dark-gray);
+}
+
+.docs-content table tbody tr td {
+    padding: 0.5rem 1rem 0.5rem 0;
+    vertical-align: baseline;
+    line-height: 1.5rem;
+}
+
+.docs-content section p a {
+    color: #68b5fb;
+    transition: 0.15s color;
+}
+
+.docs-content code {
+    background-color: #2a2828;
+    padding: 0 0.25rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    border: 1px solid #3e3c3c;
+}
+
+.docs-content .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+
+.docs-content .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid var(--dark-gray);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.docs-content .cards .card:hover span {
+    color: var(--white);
+}
+
+.docs-content .cards .card span {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.docs-content .cards .card p {
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: var(--light-gray);
 }
 
 .summary {
@@ -204,4 +294,93 @@
 
 .summary a:hover {
     color: var(--white);
+}
+
+.bottom-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-inline: 1.5rem;
+}
+
+.bottom-navigation a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    position: relative;
+}
+
+.bottom-navigation span,
+.bottom-navigation i {
+    transition: 0.15s color;
+}
+
+.bottom-navigation a:hover,
+.bottom-navigation a:hover i,
+.bottom-navigation a:hover span {
+    color: var(--white);
+}
+
+.bottom-navigation div {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-navigation a span {
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.bottom-navigation i {
+    font-size: 2rem;
+    color: var(--light-gray);
+    position: absolute;
+}
+
+.bottom-navigation .bx-chevron-left {
+    left: -2rem;
+}
+
+.bottom-navigation .bx-chevron-right {
+    right: -2rem;
+}
+
+.feedback-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-feedback {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #0a0a0a;
+    padding: 0.5rem 0.75rem;
+    border-radius: 100vh;
+    border: 1px solid var(--dark-gray);
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.user-feedback button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: 0.2s background-color ease;
+    --svg-fill: var(--light-gray);
+}
+
+.user-feedback button:hover {
+    cursor: pointer;
+    background-color: #0f2f57;
+}
+
+.user-feedback button:hover svg {
+    --svg-fill: #52a8ff;
 }
