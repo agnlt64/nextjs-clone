@@ -39,6 +39,16 @@ body {
     font-family: "geistSansFont", sans-serif;
 }
 
+body::-webkit-scrollbar {
+    background-color: #000;
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 0.25rem;
+}
+
 .no-scroll {
     overflow: hidden;
 }
