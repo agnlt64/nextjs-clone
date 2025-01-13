@@ -77,6 +77,10 @@ header {
     color: var(--active-link);
 }
 
+.rotate {
+    rotate: 90deg;
+}
+
 .nav {
     height: 64px;
     width: 100%;

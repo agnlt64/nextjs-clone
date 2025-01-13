@@ -16,3 +16,13 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+
+const mobileNav = document.getElementById('toggle-mobile-nav')
+mobileNav.addEventListener('click', () => {
+    const menu = document.querySelector('.side-nav')
+    const btn = mobileNav.children[0]
+
+    btn.children[0].classList.toggle('rotate')
+    menu.classList.toggle('mobile-active')
+    document.body.classList.toggle('no-scroll')
+})
