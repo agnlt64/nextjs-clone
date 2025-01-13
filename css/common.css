@@ -224,7 +224,7 @@ header {
     display: none;
 }
 
-.nav-mobile[active] {
+.nav-mobile:is(.active) {
     display: flex;
     flex-direction: column;
     padding-inline: 2rem;
@@ -232,24 +232,24 @@ header {
     position: sticky;
     top: 4rem;
     background-color: var(--bg);
-    /* width: 100%; */
+    z-index: 999;
 }
 
-.nav-mobile[active] .links {
+.nav-mobile:is(.active) .links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.nav-mobile[active] .buttons {
+.nav-mobile:is(.active) .buttons {
     flex-direction: column;
     margin-top: auto;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.nav-mobile[active] .buttons a {
+.nav-mobile:is(.active) .buttons a {
     width: 100%;
 }
 
