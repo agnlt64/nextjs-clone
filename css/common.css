@@ -73,6 +73,10 @@ header {
     z-index: 999;
 }
 
+.active {
+    color: var(--active-link);
+}
+
 .nav {
     height: 64px;
     width: 100%;

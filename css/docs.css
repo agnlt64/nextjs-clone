@@ -160,13 +160,12 @@
     }
 }
 
-.docs-content a {
+.docs-content h2 a {
     color: var(--white);
-    transition: 0.15s color;
 }
 
-.docs-content .active {
-    color: var(--active-link);
+.docs-content a {
+    transition: 0.15s color;
 }
 
 .docs-content a:hover {
@@ -307,8 +306,11 @@
 }
 
 .summary a {
-    color: var(--light-gray);
     transition: 0.15s color;
+}
+
+.summary a:not(.active) {
+    color: var(--light-gray);
 }
 
 .summary a:hover {
@@ -333,6 +335,7 @@
     flex-direction: column;
     gap: 0.25rem;
     position: relative;
+    color: var(--white);
 }
 
 .bottom-navigation span,
