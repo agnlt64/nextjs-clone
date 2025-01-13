@@ -223,8 +223,12 @@ header {
 .nav-mobile[active] {
     display: flex;
     flex-direction: column;
-    margin-inline: 2rem;
+    padding-inline: 2rem;
     height: calc(100vh - 64px);
+    position: sticky;
+    top: 4rem;
+    background-color: var(--bg);
+    /* width: 100%; */
 }
 
 .nav-mobile[active] .links {
