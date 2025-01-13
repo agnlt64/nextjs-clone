@@ -144,9 +144,19 @@
     color: var(--white);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .side-nav {
         padding-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-nav {
+        display: none;
+    }
+
+    .docs-content {
+        padding-inline: 1rem;
     }
 }
 
@@ -182,6 +192,9 @@
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
+}
+
+.docs-content section:not(.greetings) {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -256,6 +269,12 @@
     color: var(--light-gray);
 }
 
+@media (max-width: 576px) {
+    .docs-content .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 .summary {
     min-width: 14rem;
     position: sticky;
@@ -294,6 +313,12 @@
 
 .summary a:hover {
     color: var(--white);
+}
+
+@media (max-width: 992px) {
+    .summary  {
+        display: none;
+    }
 }
 
 .bottom-navigation {
