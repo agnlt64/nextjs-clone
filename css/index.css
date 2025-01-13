@@ -271,6 +271,7 @@
     flex-direction: column;
     gap: 0.5rem;
     transition: 150ms border-color, 150ms background-color;
+    color: var(--white);
 }
 
 .features .card img {
@@ -310,6 +311,7 @@
     height: 10rem;
     padding: 1.5rem 2rem;
     border-radius: 12px;
+    color: var(--white);
 }
 
 @media (max-width: 1400px) {
