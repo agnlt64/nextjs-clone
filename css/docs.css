@@ -165,9 +165,11 @@
     .side-nav:is(.mobile-active) {
         display: flex;
         position: fixed;
+        top: 7.5rem;
         background-color: #000c;
         backdrop-filter: blur(4px);
         width: 100%;
+        height: calc(100% - 7.5rem);
     }
 
     .docs-content {
@@ -187,6 +189,7 @@
         border-bottom: 1px solid var(--dark-gray);
         position: sticky;
         top: 4rem;
+        background-color: #000c;
         backdrop-filter: blur(4px);
     }
     

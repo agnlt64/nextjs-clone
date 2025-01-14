@@ -5,8 +5,8 @@ const navSections = Array.from(navItems).map(section => section.getAttribute('hr
 window.addEventListener('scroll', () => {
     for (let id of navSections) {
         id = id.replace('#', '')
-        if (id) {
-            const section = document.getElementById(id)
+        const section = document.getElementById(id)
+        if (section) {
             if (section.offsetTop - window.scrollY <= 150) {
                 navSections.forEach(section => {
                     document.querySelector(`.summary a[href="${section}"]`).classList.remove('active')
