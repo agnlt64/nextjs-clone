@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Next.js by Vercel - The React Framework</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/about.css">
+    <script defer src="../js/navbar.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/svgs/favicon.svg" type="image/x-icon">
 </head>
@@ -41,20 +42,18 @@
                 </div>
             </a>
             <ul class="links">
-                <ul class="links">
-                    <li class="nav-link">
-                        <a class="current" href="./about.html">About</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./docs.html">Docs</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <li class="nav-link">
+                    <a class="current" href="./about.html">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./docs.html">Docs</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./contact.html">Contact</a>
+                </li>
             </ul>
             <div class="buttons">
                 <input class="search-doc" type="text" placeholder="Search documentation...">
@@ -75,7 +74,7 @@
                     <path d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z"></path>
                     <path d="M16 16l4.5 4.5"></path>
                 </svg>
-                <button class="hamburger-btn" aria-controls="primary-navigation" aria-expanded="false">
+                <button class="hamburger-btn" aria-expanded="false">
                     <svg stroke="#fff" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="40" height="40">
                         <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
                             d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
@@ -117,7 +116,7 @@
     </div>
     <main class="main">
         <div class="maincontainer">
-            <span class="bubble">
+            <div class="bubble">
                 <h1>À propos de notre projet.</h1>
                 <h2>
                     Vercel offre aux développeurs l'expérience et l'infrastructure
@@ -125,7 +124,7 @@
                     <span>mettre à l'échelle</span> et <span>sécuriser</span> un web plus
                     rapide et plus personnalisé.
                 </h2>
-            </span>
+            </div>
             <div class="cards">
                 <div class="card">
                     <i class="bx bx-check-circle"></i>
@@ -149,9 +148,9 @@
                     </p>
                 </div>
             </div>
-            <section class="image-container">
+            <div class="image-container">
                 <img src="https://console.studizz.fr/uploads/medias/59ee025775549a751a2b23c8/blason-Bleu_png"
-                    alt="Project Image" />
+                    alt="Project Image">
                 <div class="projdesc">
                     <p>
                         "Next.js clone" est un projet créé dans le cadre d'une SAÉ à l'IUT
@@ -161,16 +160,16 @@
                         web en général.
                     </p>
                 </div>
-            </section>
-            <section class="grid-container">
-                <span class="investors">
+            </div>
+            <div class="grid-container">
+                <div class="investors">
                     <h1>Nos investisseurs.</h1>
                     <h2>Présentation de l'équipe</h2>
-                </span>
+                </div>
                 <div class="member">
                     <div class="grid-img-cv">
                         <img src="../assets/imgs/antonin.jpeg"
-                            alt="Antonin" />
+                            alt="Antonin">
                         <a href="../assets/cv/cv_antonin.pdf" download class="download">
                             <i class='bx bxs-download'></i>
                             Download
@@ -185,18 +184,16 @@
                 </div>
                 <div class="member">
                     <div class="grid-img-cv">
-                        <img src="https://media.tenor.com/rwQRNVEAWz8AAAAM/cat-meme.gif" alt="Raphaël" />
+                        <img src="https://media.tenor.com/rwQRNVEAWz8AAAAM/cat-meme.gif" alt="Raphaël">
                         <a href="../assets/cv/cv_raphael.pdf" download class="btn-flip" data-back="Download" data-front="CV"></a>
                     </div>
                     <div class="grid-text">
-                        <p>
-                            
-Raphaël Mont, étudiant en première année de BUT Informatique à l'IUT d'Amiens. Passionné par l'informatique et le développement, a acquis des compétences dans des langages comme le C/C++, le Go,  HTML et CSS, ainsi que dans la gestion de bases de données MySQL et l'utilisation de Git/GitHub. Il se distingue par sa rigueur analytique et ses connaissances approfondies en mathématiques discrètes et algèbre linéaire.
+                        <p>Raphaël Mont, étudiant en première année de BUT Informatique à l'IUT d'Amiens. Passionné par l'informatique et le développement, a acquis des compétences dans des langages comme le C/C++, le Go,  HTML et CSS, ainsi que dans la gestion de bases de données MySQL et l'utilisation de Git/GitHub. Il se distingue par sa rigueur analytique et ses connaissances approfondies en mathématiques discrètes et algèbre linéaire.
 Ses expériences incluent des projets variés, comme la création de jeux en Lua ou encore l’implémentation d’algorithmes de tri avancés. Par ailleurs, son engagement dans des activités telles que le scoutisme et la musique témoigne de sa capacité à travailler en équipe et à faire preuve de discipline.
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -234,6 +231,4 @@ Ses expériences incluent des projets variés, comme la création de jeux en Lua
         </div>
     </footer>
 </body>
-<script src="../js/navbar.js"></script>
-
 </html>

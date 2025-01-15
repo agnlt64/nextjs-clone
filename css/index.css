@@ -570,7 +570,7 @@
 .powered-by .top-pins {
     position: absolute;
     top: 0;
-    translate: 0 -100%;
+    transform: translateY(-100%);
 }
 
 .powered-by .top-pins .pin {
@@ -581,7 +581,7 @@
 .powered-by .bot-pins {
     position: absolute;
     bottom: 0;
-    translate: 0 100%;
+    transform: translateY(100%);
 }
 
 .powered-by .bot-pins .pin {
@@ -597,22 +597,22 @@
 .powered-by .right-pins {
     position: absolute;
     right: 0;
-    translate: 100% 0;
+    transform: translateX(100%);
 }
 
 .powered-by .right-pins .pin {
-    rotate: 90deg;
+    transform: rotate(90deg);
     background: linear-gradient(1turn, #6f6f6f, #878787 33.33%, #8b8b8b 66.67%, #4d4d4d);
 }
 
 .powered-by .left-pins {
     position: absolute;
     left: 0;
-    translate: -100% 0;
+    transform: translateX(-100%);
 }
 
 .powered-by .left-pins .pin {
-    rotate: -90deg;
+    transform: rotate(-90deg);
     background: linear-gradient(180deg, #787878, #6b6b6b 33.33%, #8b8b8b 66.67%, #303030);
 }
 

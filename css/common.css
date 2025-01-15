@@ -78,7 +78,7 @@ header {
 }
 
 .rotate {
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 .nav {
@@ -206,12 +206,11 @@ header {
 }
 
 .nav .hamburger-btn .hamburger {
-    transition: translate 1s, rotate 1s;
+    transition: transform 0.5s;
 }
 
 .nav .hamburger-btn[aria-expanded="true"] .hamburger {
-    translate: 6px -2px;
-    rotate: 0.125turn;
+    transform: translateX(6px) translateY(-2px) rotate(0.125turn);
 }
 
 .nav .hamburger-btn .line {
