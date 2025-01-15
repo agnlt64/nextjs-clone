@@ -14,4 +14,4 @@ All the pages of the site are fully W3C-compliant, according to their [HTML vali
 There are two calls to action in this website : one is in [pages/contact.html](./pages/contact.html) (fake email form) and the other is in [pages/about.html](./pages/about.html) (download the CVs of the team).
 
 ## CSS Framework
-[pages/bloh.html](./pages/blog.html) is entirely made using [Tailwind CSS](https://tailwindcss.com). We used a local copy located at [js/tailwind.js](./js/tailwind.js).
+[pages/blog.html](./pages/blog.html) is entirely made using [Tailwind CSS](https://tailwindcss.com). We used a local copy located at [js/tailwind.js](./js/tailwind.js).
