@@ -1,0 +1,367 @@
+
+.maincontainer {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bubble h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.bubble h2 {
+    color: #999;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-weight: 100;
+    margin-bottom: 5rem;
+}
+
+.bubble span {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .bubble {
+        margin: 3rem;
+    }
+    .bubble h2 {
+        margin: 3rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bubble {
+        margin: 2rem;
+    }
+    .bubble h2 {
+        margin: 2rem 0;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .bubble {
+        margin: 1rem;
+    }
+    .bubble h2 {
+        margin: 1rem 0;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    color: #999;
+    border: 1px solid #282828;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+
+.card i {
+    color: #fff;
+    font-size: 3em;   
+}
+
+.card span{
+    color: #fff;
+}
+
+
+.main {
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.download {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #007bff;
+    font-size: 18px;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #007bff;
+    box-shadow: 0 6px 40px 2px #007bff;
+    transition: 0.2s scale, 0.2s background-color;
+}
+
+.download:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #016bdc;
+    box-shadow: 0 0 10px 5px #007bff;
+}
+
+.download:active {
+    scale: 0.95;
+}
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    width: 8rem;
+    background-color: #007bff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 6px 40px 2px #007bff;
+}
+
+.btn-flip::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #007bff;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip::after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #007bff;
+    border: 2px solid #007bff;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #fff;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:hover::after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover::before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 1px solid #282828;
+    border-radius: 4rem;
+    background-color: #111;
+}
+
+.image-container img {
+    margin-left: 10px;
+    margin: 6px;
+    border: 1px solid #282828;
+    border-radius: 4rem;
+    max-width: 400px;
+    background-color: #010101;
+}
+
+.image-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    text-align: justify;
+    margin: 0 auto;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    min-height: 420px;
+    padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .image-container img {
+        width: 300px;
+    }
+    .image-container p {
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .image-container img {
+        width: 200px;
+    }
+    .image-container p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: 200px;
+    }
+    .image-container p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-container p {
+        font-size: 1rem;
+    }
+}
+
+.projdesc {
+    font-size: 12px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.investors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+.investors h2 {
+    color: #999;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-weight: 100;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.member {
+    display: flex;
+    border: 1px solid #282828;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-img-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    width: 12rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.grid-text {
+    color: #999;
+    font-size: 1.6rem;
+    margin: 10px;
+    display: flex;
+}
+
+.grid-text p {
+    font-size: 18px;
+}
+
+.grid-container > :nth-child(2)
+{
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1200px) {
+    .member img {
+        width: 300px;
+    }
+    .member p{
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .member img {
+        width: 200px;
+    }
+    .member p{
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .member img {
+        width: 200px;
+    }
+    .member p{
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .member p, .raphael p {
+        font-size: 1rem;
+    }
+}
