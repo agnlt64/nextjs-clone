@@ -188,12 +188,10 @@
 
 .image-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 2rem auto 0;
+    padding: 1rem;
     border: 1px solid #282828;
     border-radius: 4rem;
     background-color: #111;
@@ -209,15 +207,11 @@
 }
 
 .image-container p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #999;
     text-align: justify;
     margin: 0 auto;
     border-radius: 4rem;
     font-size: 1.6rem;
-    min-height: 420px;
     padding: 1rem;
 }
 
@@ -231,6 +225,10 @@
 }
 
 @media (max-width: 992px) {
+    .image-container {
+        flex-direction: column;
+    }
+
     .image-container img {
         width: 200px;
     }
@@ -328,9 +326,11 @@
     font-size: 18px;
 }
 
-.grid-container > :nth-child(2)
-{
-    flex-direction: row-reverse;
+@media (min-width: 768px) {
+    .grid-container > :nth-child(2)
+    {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -352,6 +352,10 @@
 }
 
 @media (max-width: 768px) {
+    .member {
+        flex-direction: column;
+    }
+
     .member img {
         width: 200px;
     }
